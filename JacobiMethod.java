@@ -4,6 +4,7 @@ package JacobiAlgorithm;
 
 public class JacobiMethod {
 public static void main(String[] args) {
+
         double[][] equation = {{19,3,2,9},{3,15,1,11},{1,2,-3,10}};
         solve(equation);
         
@@ -54,6 +55,7 @@ public static void main(String[] args) {
         for (int i = 0; i < X.length; i++) {
             System.out.printf("X_%d: %5.4f\n",i,X[i]);
         }
+        System.out.println("Solve Finished!");
     }
     
     static double checkErr(double[] prevX,double[] X,double eps){
